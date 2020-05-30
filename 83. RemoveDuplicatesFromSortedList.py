@@ -5,6 +5,8 @@
 #         self.next = next
 class Solution:
     def deleteDuplicates(self, head: ListNode) -> ListNode:
+        
+        # mine
         root = ListNode(0)
         root.next = head
         cur = root
@@ -18,3 +20,14 @@ class Solution:
                 cur = cur.next
             step += 1
         return root.next
+        
+        # A better one
+        slow, fast = head, head.next if head else None
+        while fast:
+            if slow.val == fast.val:
+                fast = fast.next
+                slow.next = fast
+            else:
+                slow = fast
+                fast = fast.next
+        return head
