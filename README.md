@@ -11,3 +11,6 @@
 #####   pop(): This function is used to delete an argument from the right end of deque.
 ####
 #### 3. top k --> Heap
+##### max_heap = [(-val, key) for key, val in dic.items()]
+##### min_heap = [(val, key) for key, val in dic.items()]
+##### heapq.heapify(max_heap)
