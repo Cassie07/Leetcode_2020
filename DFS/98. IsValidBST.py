@@ -3,8 +3,9 @@ class Solution:
         # DFS
         if not root:
             return True
-        
-        stack = [(root, float('-inf'),float('inf'))]
+        # stack = deque()
+        # stack.append((root, float('-inf'),float('inf')))
+        # stack = [(root, float('-inf'),float('inf'))]
         while stack:
             root, lower, upper = stack.pop()
             if root == None:
