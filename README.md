@@ -1,5 +1,4 @@
-### Leetcode_2020
-#### Notebook
+#### Notebook (Leetcode_2020)
 #### 1. BFS --> Queue: FIFO
 #####   deque()
 #####   append(): This function is used to insert the value in its argument to the right end of deque.
