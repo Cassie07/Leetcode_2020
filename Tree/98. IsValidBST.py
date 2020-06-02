@@ -5,7 +5,7 @@ class Solution:
             return True
         # stack = deque()
         # stack.append((root, float('-inf'),float('inf')))
-        # stack = [(root, float('-inf'),float('inf'))]
+        stack = [(root, float('-inf'),float('inf'))]
         while stack:
             root, lower, upper = stack.pop()
             if root == None:
