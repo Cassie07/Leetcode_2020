@@ -4,6 +4,8 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+# BFS
 class Solution:
     def invertTree(self, root: TreeNode) -> TreeNode:
         if not root: return root
