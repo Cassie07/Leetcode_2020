@@ -24,3 +24,13 @@ class Solution:
                 queue.append((root.left))
                 queue.append((root.right))
         return res
+
+ # DFS(recursively)
+class Solution:
+    def invertTree(self, root: TreeNode) -> TreeNode:
+        if not root: return root
+        if root:
+            left = self.invertTree(root.left)
+            right = self.invertTree(root.right)
+            root.left, root.right = right, left
+            return root
