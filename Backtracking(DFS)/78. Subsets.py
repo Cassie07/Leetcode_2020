@@ -11,8 +11,7 @@ class Solution:
         if x < len(self.nums):
             tmp.append(self.nums[x])
             self.res.append(tmp)
-            new_tmp = copy.deepcopy(tmp) # if not use copy.deepcopy() tmp will be changed in the next iteration
             for k in range(x+1, len(self.nums)):
-                new_tmp = copy.deepcopy(tmp)
+                new_tmp = copy.deepcopy(tmp) # if not use copy.deepcopy() tmp will be changed in the next iteration
                 self.dfs(k, new_tmp)
                 
